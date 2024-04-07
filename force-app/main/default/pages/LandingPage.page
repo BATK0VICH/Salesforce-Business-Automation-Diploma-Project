@@ -1,6 +1,46 @@
 <apex:page>
-<!-- Begin Default Content REMOVE THIS -->
-<h1>Congratulations</h1>
-This is your new Page
-<!-- End Default Content REMOVE THIS -->
+
+    <!-- <META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8"> -->
+
+
+    <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8&orgId=00DQy000006jt8B" method="POST">
+
+        <input type="hidden" name="oid" value="00DQy000006jt8B"></input>
+        <input type="hidden" name="retURL" value="https://creative-fox-wua84o-dev-ed--c.trailblaze.vf.force.com/apex/ThankYou"></input>
+
+        <label for="first_name">First Name</label>
+        <input id="first_name" maxlength="40" name="first_name" size="20" type="text"></input>
+        <br></br>
+
+        <label for="last_name">Last Name</label>
+        <input id="last_name" maxlength="80" name="last_name" size="20" type="text"></input>
+        <br></br>
+
+        <label for="email">Email</label>
+        <input id="email" maxlength="80" name="email" size="20" type="text"></input>
+        <br></br>
+
+        <label for="mobile">Mobile</label>
+        <input id="mobile" maxlength="40" name="mobile" size="20" type="text"></input>
+        <br></br>
+
+        <input type="submit" name="submit"></input>
+
+    </form>
+
+    <!-- <apex:includeLightning />
+    <div id="lightning"> </div>
+    <script>
+        $Lightning.use(
+            "c: LandingPage",
+            function () {
+                $Lightning.createComponent(
+                    "c: LandingPage",
+                    {},
+                    "lightning"
+                );
+            }
+        );
+
+    </script> -->
 </apex:page>
