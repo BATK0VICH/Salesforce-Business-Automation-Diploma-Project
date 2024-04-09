@@ -1,5 +1,28 @@
-<apex:page>
-<!-- Begin Default Content REMOVE THIS -->
-<h1>Thank you!</h1>
-<!-- End Default Content REMOVE THIS -->
+<apex:page showHeader="false" standardStylesheets="false" applyBodyTag="false" applyHtmlTag="false">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+
+        .thank-you-container {
+            max-width: 400px;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+            text-align: center;
+        }
+    </style>
+
+    <div class="thank-you-container">
+        <h2>Thank You!</h2>
+        <p>Your form has been submitted successfully.</p>
+        <p>We will get back to you shortly.</p>
+    </div>
 </apex:page>
