@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ProductInterest__c</fullName>
+    <externalId>false</externalId>
+    <label>Product Interest</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Electrical installation</fullName>
+                <default>false</default>
+                <label>Electrical installation</label>
+            </value>
+            <value>
+                <fullName>Industrial Electrical Products</fullName>
+                <default>false</default>
+                <label>Industrial Electrical Products</label>
+            </value>
+            <value>
+                <fullName>Consultation</fullName>
+                <default>false</default>
+                <label>Consultation</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>
