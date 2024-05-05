@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Dronov Business Solutions</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .container {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .logo {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .logo img {
+            max-width: 150px;
+        }
+        h1, h2 {
+            text-align: center;
+        }
+        p {
+            margin-bottom: 15px;
+        }
+        .footer {
+            margin-top: 30px;
+            text-align: center;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to Dronov Business Solutions!</h1>
+        <p>We are delighted to welcome you as a new client at Dronov Business Solutions. It is our pleasure to serve you and meet your business needs.</p>
+        <p>At Dronov Business Solutions, we are committed to providing you with top-notch services and support. Whether you need assistance with our products, have questions, or require any kind of help, our team is here for you.</p>
+        <p>Please feel free to reach out to us anytime via email at <a href="mailto:dmitrii.dronov2001@gmail.com">dmitrii.dronov2001@gmail.com</a> or by phone at +37378475539.</p>
+        <p>We look forward to building a strong and successful partnership with you.</p>
+        <h2>Best Regards,</h2>
+        <p>The Dronov Business Solutions Team</p>
+    </div>
+    <div class="footer">
+        <p>&copy; 2024 Dronov Business Solutions. All rights reserved.</p>
+    </div>
+</body>
+</html>
