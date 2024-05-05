@@ -1,7 +1,7 @@
 public without sharing class LeadTriggerHandler extends AbstractTriggerHandler {
     private EmailTemplateSelector emailTemplateSelector = new EmailTemplateSelector();
     private EmailMessagingService emailMessagingService = new EmailMessagingService();
-
+    private TaskService taskService = new TaskService();
     public LeadTriggerHandler(
         final List<Lead> newLeads,
         final Map<Id, Lead> oldLeadsByIds
@@ -11,6 +11,7 @@ public without sharing class LeadTriggerHandler extends AbstractTriggerHandler {
 
     public override void handleAfterInsert() {
         this.sendWelcomeEmails();
+        this.createDefaultTasks();
     }
 
     private void sendWelcomeEmails() {
@@ -62,5 +63,19 @@ public without sharing class LeadTriggerHandler extends AbstractTriggerHandler {
         }
 
         return welcomeEmailMessages;
+    }
+
+    private void createDefaultTasks() {
+        List<Task> defaultTasks = new List<Task>();
+
+        for (Lead newLead : (List<Lead>) this.getNewRecords()) {
+            defaultTasks.addAll(this.taskService.createDefaultTasksFor(newLead));
+        }
+
+        if (defaultTasks.isEmpty()) {
+            return;
+        }
+
+        insert defaultTasks;
     }
 }
