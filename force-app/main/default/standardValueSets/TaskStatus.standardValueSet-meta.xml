@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>TO DO</fullName>
+        <default>true</default>
+        <label>TO DO</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>IN PROGRESS</fullName>
+        <default>false</default>
+        <label>IN PROGRESS</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>DONE</fullName>
+        <default>false</default>
+        <label>DONE</label>
+        <closed>true</closed>
+    </standardValue>
+</StandardValueSet>
