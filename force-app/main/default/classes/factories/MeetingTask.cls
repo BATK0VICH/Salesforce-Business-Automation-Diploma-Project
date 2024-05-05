@@ -13,6 +13,7 @@ public without sharing class MeetingTask extends AbstractTask {
         task.Type = Tasks.OTHER_TYPE;
         task.Priority = Tasks.HIGH_PRIORITY;
         task.ActivityDate = Date.today().addDays(1);
+        task.Subject = Tasks.MEETING_SUBJECT;
         return task;
     }
 }

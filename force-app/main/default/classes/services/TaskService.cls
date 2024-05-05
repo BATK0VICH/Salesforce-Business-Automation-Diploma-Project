@@ -17,7 +17,7 @@ public without sharing class TaskService {
         );
 
         Task task = researchTask.create();
-        task.Subject = 'Research: About ' + newLead.Company;
+        task.Subject = Tasks.RESEARCH_SUBJECT;
         task.Description =
             'Before you start, do a research about ' + newLead.Company;
 
@@ -31,16 +31,12 @@ public without sharing class TaskService {
         );
 
         Task task = emailTask.create();
-        task.Subject =
-            'Email: Share intrested products with ' +
-            newLead.Company +
-            '/' +
+        task.Description =
+            'Share intersted products with ' +
             newLead.FirstName +
             ' ' +
-            newLead.LastName;
-        task.Description =
-            newLead.Name +
-            ' is intrested in ' +
+            newLead.LastName +
+            ' who is intrested in ' +
             newLead.ProductInterest__c;
 
         return task;
@@ -53,16 +49,12 @@ public without sharing class TaskService {
         );
 
         Task task = callTask.create();
-        task.Subject =
-            'Call: Follow up with  ' +
-            newLead.Company +
-            '/' +
+        task.Description =
+            'Follow up with ' +
             newLead.FirstName +
             ' ' +
-            newLead.LastName;
-        task.Description =
-            newLead.Name +
-            ' is intrested in ' +
+            newLead.LastName +
+            ' who is intrested in ' +
             newLead.ProductInterest__c +
             ' for ' +
             newLead.Company;
@@ -77,8 +69,15 @@ public without sharing class TaskService {
         );
 
         Task task = meetingTask.create();
-        task.Subject = 'Meeting: Schedule with ' + newLead.Company;
-        task.Description = newLead.FirstName + ' ' + newLead.LastName + ' from ' + newLead.Company + ' is intrested in ' + newLead.ProductInterest__c;
+        task.Description =
+            'Schedule meeting with ' +
+            newLead.FirstName +
+            ' ' +
+            newLead.LastName +
+            ' from ' +
+            newLead.Company +
+            ' who is intrested in ' +
+            newLead.ProductInterest__c;
 
         return task;
     }

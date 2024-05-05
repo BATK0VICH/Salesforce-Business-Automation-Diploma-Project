@@ -11,6 +11,7 @@ public without sharing class EmailTask extends AbstractTask {
     public override Task create() {
         Task task = this.createEmptyTask();
         task.Type = Tasks.EMAIL_TYPE;
+        task.Subject = Tasks.EMAIL_SUBJECT;
         return task;
     }
 }
