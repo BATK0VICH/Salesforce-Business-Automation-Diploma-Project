@@ -13,7 +13,7 @@ public without sharing class LeadTriggerHandler extends AbstractTriggerHandler {
         this.sendWelcomeEmails();
     }
 
-    public void sendWelcomeEmails() {
+    private void sendWelcomeEmails() {
         final List<EmailTemplate> welcomeEmailTemplate = emailTemplateSelector.selectByDeveloperNames(
             new Set<String>{
                 EmailTemplates.WELCOME_EMAIL_TEMPLATE_DEVELOPER_NAME
@@ -43,7 +43,7 @@ public without sharing class LeadTriggerHandler extends AbstractTriggerHandler {
         }
     }
 
-    public List<Messaging.SingleEmailMessage> constructEmailMessages(
+    private List<Messaging.SingleEmailMessage> constructEmailMessages(
         final EmailTemplate emailTemplate
     ) {
         List<Messaging.SingleEmailMessage> welcomeEmailMessages = new List<Messaging.SingleEmailMessage>();
